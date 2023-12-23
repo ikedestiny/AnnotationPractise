@@ -4,15 +4,7 @@ import javax.lang.model.element.TypeElement;
 import java.lang.reflect.Field;
 import java.util.Set;
 
-public class VerifyProcessor extends AbstractProcessor {
-
-    @Override
-    public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
-
-
-        return false;
-    }
-
+public class VerifyProcessor {
 
     public void validate(Object object) throws IllegalAccessException {
         Field[] fields = object.getClass().getDeclaredFields();
